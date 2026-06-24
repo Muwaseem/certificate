@@ -7,7 +7,6 @@
 <title>Certificate Verification</title>
 
 <style>
-
 *{
     margin:0;
     padding:0;
@@ -37,35 +36,34 @@ body{
 
 .container{
     width:95%;
-    max-width:1600px;
-    margin:auto;
+    max-width:1400px;
+    margin:20px auto;
     border:2px solid #00c896;
     border-radius:20px;
     display:flex;
-    flex-wrap:wrap;
+    align-items:center;
     overflow:hidden;
 }
 
 .left{
     flex:1;
-    min-width:350px;
-    padding:80px 40px;
+    padding:60px 30px;
     text-align:center;
 }
 
 .left img{
     width:120px;
-    margin-bottom:30px;
+    margin-bottom:25px;
 }
 
 .left h2{
     font-size:48px;
-    margin-bottom:30px;
+    margin-bottom:25px;
 }
 
 .left p{
     font-size:22px;
-    margin-bottom:40px;
+    margin-bottom:35px;
 }
 
 .btn{
@@ -73,7 +71,7 @@ body{
     background:#22c55e;
     color:white;
     text-decoration:none;
-    padding:18px 40px;
+    padding:18px 35px;
     border-radius:12px;
     font-size:22px;
     font-weight:bold;
@@ -81,21 +79,22 @@ body{
 }
 
 .btn:hover{
-    transform:translateY(-2px);
+    opacity:0.9;
 }
 
 .right{
     flex:1;
-    min-width:500px;
+    padding:15px;
 }
 
 .right img{
     width:100%;
     height:auto;
     display:block;
+    border-radius:10px;
 }
 
-/* Mobile Responsive */
+/* Mobile */
 
 @media (max-width:768px){
 
@@ -104,7 +103,7 @@ body{
     }
 
     .header h1{
-        font-size:34px;
+        font-size:32px;
     }
 
     .header p{
@@ -113,16 +112,15 @@ body{
 
     .container{
         flex-direction:column;
-        width:95%;
     }
 
     .left{
-        min-width:100%;
-        padding:35px 20px;
+        width:100%;
+        padding:30px 15px;
     }
 
     .left img{
-        width:90px;
+        width:80px;
     }
 
     .left h2{
@@ -137,20 +135,19 @@ body{
         width:100%;
         max-width:300px;
         font-size:18px;
-        padding:15px 20px;
+        padding:15px;
     }
 
     .right{
-        min-width:100%;
+        width:100%;
+        padding:10px;
     }
 
     .right img{
         width:100%;
         height:auto;
-        object-fit:contain;
     }
 }
-
 </style>
 
 </head>
@@ -166,8 +163,7 @@ body{
 
 ```
 <div class="left">
-
-    <img src="certificate-icon.png" alt="Certificate">
+    <img src="certificate-icon.png" alt="Certificate Icon">
 
     <h2>HTML</h2>
 
@@ -176,13 +172,10 @@ body{
     <a class="btn" href="certificate.pdf" target="_blank">
         Download Certificate
     </a>
-
 </div>
 
 <div class="right">
-
     <img src="certificate-preview.jpg" alt="Certificate Preview">
-
 </div>
 ```
 
